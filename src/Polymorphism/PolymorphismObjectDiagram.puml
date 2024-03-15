@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "<u>ship1:ship</u>" as ship0{
+    Ship Name = "Ship 1"
+    Year Built = "6000"
+}
+
+object "<u>ship2:cruiseShip</u>" as ship1{
+    Ship Name = "Ship 2"
+    Year Built = "6050"
+    Max Passengers = "5"
+}
+
+object "<u>ship3:cargoShip</u>" as ship2{
+    Ship Name = "Ship 3"
+    Year Built = "6080"
+    Capacity = 10000
+}
+
+ship0 <|-- ship1
+ship0 <|-- ship2
+
+@enduml

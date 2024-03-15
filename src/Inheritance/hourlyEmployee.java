@@ -19,36 +19,6 @@ public class hourlyEmployee extends employee
         return (super.toString() + " Wage: " + wage + " Hours Worked: " + hoursWorked);
     }
 
-    public String getFirstName()
-    {
-        return super.getFirstName();
-    }
-
-    public void setFirstName(String firstName)
-    {
-        super.setFirstName(firstName);
-    }
-
-    public String getLastName()
-    {
-        return super.getLastName();
-    }
-
-    public void setLastName(String lastName)
-    {
-        super.setLastName(lastName);
-    }
-
-    public String getSSN()
-    {
-        return super.getSSN();
-    }
-
-    public void setSSN(String SSN)
-    {
-        super.setSSN(SSN);
-    }
-
     public int getWage()
     {
         return wage;

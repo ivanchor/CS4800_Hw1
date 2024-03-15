@@ -33,7 +33,7 @@ public class ship
         return yearBuilt;
     }
 
-    public void setYearBuild(String yearBuilt)
+    public void setYearBuilt(String yearBuilt)
     {
         this.yearBuilt = yearBuilt;
     }

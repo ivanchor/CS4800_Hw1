@@ -20,37 +20,7 @@ public class commissionEmployee extends employee
         return (super.toString() + " Commission Rate: " + commissionRate + " Gross Sales: " + grossSales);
     }
 
-    public String getFirstName()
-    {
-        return super.getFirstName();
-    }
-
-    public void setFirstName(String firstName)
-    {
-        super.setFirstName(firstName);
-    }
-
-    public String getLastName()
-    {
-        return super.getLastName();
-    }
-
-    public void setLastName(String lastName)
-    {
-        super.setLastName(lastName);
-    }
-
-    public String getSSN()
-    {
-        return super.getSSN();
-    }
-
-    public void setSSN(String SSN)
-    {
-        super.setSSN(SSN);
-    }
-
-    public int commissionRate()
+    public int getCommissionRate()
     {
         return commissionRate;
     }

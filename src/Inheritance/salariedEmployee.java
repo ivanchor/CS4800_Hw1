@@ -17,36 +17,6 @@ public class salariedEmployee extends employee
         return (super.toString() + " Weekly Salary: " + weeklySalary);
     }
 
-    public String getFirstName()
-    {
-        return super.getFirstName();
-    }
-
-    public void setFirstName(String firstName)
-    {
-        super.setFirstName(firstName);
-    }
-
-    public String getLastName()
-    {
-        return super.getLastName();
-    }
-
-    public void setLastName(String lastName)
-    {
-        super.setLastName(lastName);
-    }
-
-    public String getSSN()
-    {
-        return super.getSSN();
-    }
-
-    public void setSSN(String SSN)
-    {
-        super.setSSN(SSN);
-    }
-
     public int getWeeklySalary()
     {
         return weeklySalary;

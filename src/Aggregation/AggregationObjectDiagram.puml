@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "<u>instructor1:instructor</u>" as ins1{
+    First Name = "Nima"
+    Last Name = "Davarpanah"
+    Office Number = "3-2636"
+}
+
+object "<u>textbook1:textbook</u>" as tbook1{
+    Book Title = "Clean Code"
+    Author = "Robert Cecil Martin"
+    Publisher = "Pearson"
+}
+
+object "<u>course1:course</u>" as course1{
+    Course Name = "CS 4800"
+    Instructor = instructor1
+    Textbook = textbook1
+}
+
+course1 o-- ins1
+course1 o-- tbook1
+
+@enduml

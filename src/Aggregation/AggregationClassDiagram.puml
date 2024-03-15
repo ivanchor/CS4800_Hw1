@@ -1,0 +1,58 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class course
+{
+    -courseName: String
+    -instructor: instructor
+    -textbook: textbook
+
+    +course()
+    +course(courseName: String, instructor: instructor, (textbook: textbook)
+    +toString(): String
+    +setCourseName(courseName: String): void
+    +getCourseName(): String
+    +setInstructor(instructor: instructor): void
+    +getInstructor(): instructor
+    +setTextbook(textbook: textbook): void
+    +getTextbook(): textbook
+}
+
+class instructor
+{
+    -firstName: String
+    -lastName: String
+    -officeNumber: String
+
+    +instructor()
+    +instructor(firstName: String, lastName: String, officeNumber: String)
+    +toString(): String
+    +getFirstName(): String
+    +setFirstName(firstName: String): void
+    +getLastName(): String
+    +setLastName(LastName: String): void
+    +getOfficeNumber(): String
+    +setOfficeNumber(officeNumber: String): void
+}
+
+class textbook
+{
+    -bookTitle: String
+    -author: String
+    -publisher: String
+
+    +public textbook()
+    +public textbook(bookTitle: String, author: String, publisher: String)
+    +toString(): String
+    +getBookTitle(): String
+    +setBookTitle(bookTitle: String): void
+    +getAuthor(): String
+    +setAuthor(author: String): void
+    +getPublisher(): String
+    +setPublisher(publisher: String): void
+}
+
+course o-- instructor
+course o-- textbook
+
+@enduml

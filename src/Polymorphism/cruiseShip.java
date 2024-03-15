@@ -17,26 +17,6 @@ public class cruiseShip extends ship
         return ("Ship Name: " + super.getShipName() + " Max Passengers: " + maxPassengers);
     }
 
-    public String getShipName()
-    {
-        return super.getShipName();
-    }
-
-    public void setShipName(String shipName)
-    {
-        super.setShipName(shipName);
-    }
-
-    public String getYearBuilt()
-    {
-        return super.getYearBuilt();
-    }
-
-    public void setYearBuild(String yearBuilt)
-    {
-        super.setYearBuild(yearBuilt);
-    }
-
     public int getMaxPassengers()
     {
         return maxPassengers;

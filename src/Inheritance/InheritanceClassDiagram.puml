@@ -1,0 +1,77 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class employee
+{
+    -firstName: String
+    -lastname: String
+    -SSN: String
+
+    +employee()
+    +employee(firstName: String, lastName: String, SSN: String)
+    +toString(): String
+    +getFirstName(): String
+    +setFirstName(firstName: String): void
+    +getLastName(): String
+    +setLastName(lastName: String): void
+    +getSSN(): String
+    +setSSN(SSN: String): void
+}
+
+class baseEmployee
+{
+    -baseSalary: int
+
+    +baseEmployee()
+    +baseEmployee(firstName: String, lastName: String, SSN: String, baseSalary: int)
+    +toString(): String
+    +getBaseSalary(): int
+    +setBaseSalary(baseSalary: int): void
+}
+
+class commissionEmployee
+{
+    -commissionRate: int
+    -grossSales: int
+
+    +commissionEmployee()
+    +commissionEmployee(firstName: String, lastName: String, SSN: String, commissionRate: int, grossSales: int)
+    +toString(): String
+    +getCommissionRate(): int
+    +setCommissionRate(commissionRate: int): void
+    +getGrossSales(): int
+    +setGrossSales(grossSales: int): void
+}
+
+class hourlyEmployee
+{
+    -wage: int
+    -hoursWorked: int
+
+    +hourlyEmployee()
+    +hourlyEmployee(firstName: String, lastName: String, SSN: String, wage: int, hoursWorked: int)
+    +toString(): String
+    +getWage(): int
+    +setWage(wage: int): void
+    +getHoursWorked(): int
+    +setHoursWorked(hoursWorked: int): void
+}
+
+class salariedEmployee
+{
+    -weeklySalary
+
+    +salariedEmployee()
+    +salariedEmployee(firstName: String, lastName: String, SSN: String, weeklySalary: int)
+    +toString(): String
+    +getWeeklySalary(): int
+    +setWeeklySalary(weeklySalary: int): void
+}
+
+employee <|-- baseEmployee
+employee <|-- commissionEmployee
+employee <|-- hourlyEmployee
+employee <|-- salariedEmployee
+
+
+@enduml
